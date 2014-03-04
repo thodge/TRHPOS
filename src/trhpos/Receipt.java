@@ -8,7 +8,8 @@ public class Receipt {
     private static int receiptNo = 0;
     private DataStorageStrategy db = new DatabaseStorage();
     private OutputReceiptStrategy output = new OuputReceiptToConsole();
-
+//fix rigidity of the two Strategies
+    
     public Receipt(String customerId) {
         this.customer = findCustomer(customerId);
         receiptNo++;
