@@ -9,9 +9,9 @@ public class DatabaseStorage implements DataStorageStrategy{
     };
     
     Product[] products = {
-        new Product(19.95, "Sea shell", "B100", new DollarOffDiscount()),
-        new Product( 35.50, "Men's Tool Belt", "A304", new DollarOffDiscount()),
-        new Product(9.50, "Book", "I222", new PercentageOffDiscount())
+        new Product(19.95, "Sea shell", "B100", new DollarOffDiscount(5)),
+        new Product( 35.50, "Men's Tool Belt", "A304", new DollarOffDiscount(3)),
+        new Product(9.50, "Book", "I222", new PercentageOffDiscount(2))
     };
     
     public Customer findCustomer(String customerId) {
