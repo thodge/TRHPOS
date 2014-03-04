@@ -10,18 +10,18 @@ public class CashRegister {
     
     
     
-//    private Receipt receipt;
-//
-//    public void startNewSale(String custId) {
-//        receipt = new Receipt(custId);
-//    }
-//
-//    public void addItemToSale(String prodId, int qty) {
-//        receipt.addLineItem(prodId, qty);
-//    }
-//
-//    public void endSaleAndOutputReceipt() {
-//        receipt.outputReceipt();
-//    }
+    private Receipt receipt;
+
+    public void startNewSale(String customerId) {
+        receipt = new Receipt(customerId);
+    }
+
+    public void addItemToSale(String productId, int qty) {
+        receipt.addLineItem(productId, qty);
+    }
+
+    public void endSaleAndOutputReceipt() {
+        receipt.outputReceipt();
+    }
 
 }
