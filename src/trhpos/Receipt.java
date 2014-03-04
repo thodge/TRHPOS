@@ -10,7 +10,7 @@ public class Receipt {
     private OutputReceiptStrategy output = new OuputReceiptToConsole();
 //fix rigidity of the two Strategies
     
-    public Receipt(String customerId) {
+    public Receipt(String customerId) {//put db strategy in there...be flexible 
         this.customer = findCustomer(customerId);
         receiptNo++;
         lineItemArray = new LineItem[0];
