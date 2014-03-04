@@ -5,7 +5,7 @@ package trhpos;
  * @author Tammie
  */
 public class DollarOffDiscount implements DiscountStrategy {
-    private double dollarsOff = 10;
+    private double dollarsOff;
     private double prodPrice;
     private double qty;
     
