@@ -3,10 +3,10 @@ package trhpos;
 
 public interface DiscountStrategy  {
 
-    double getDiscount(double prodPrice, double qty);
-    double getProdPrice();
-    double getQty();    
-    void setProdPrice(double prodPrice);
-    void setQty(double qty);
+    public abstract double getDiscount(double prodPrice, double qty);
+    public abstract double getProdPrice();
+    public abstract double getQty();    
+    public abstract void setProdPrice(double prodPrice);
+    public abstract void setQty(double qty);
     
 }
