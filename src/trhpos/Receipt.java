@@ -9,7 +9,7 @@ public class Receipt {
     private DataStorageStrategy db = new DatabaseStorage();
     private OutputReceiptStrategy output = new OuputReceiptToConsole();
 //fix rigidity of the two Strategies
-    
+//DataStorageStrategy newDb;    
     public Receipt(String customerId) {//put db strategy in there...be flexible 
         this.customer = findCustomer(customerId);
         receiptNo++;
