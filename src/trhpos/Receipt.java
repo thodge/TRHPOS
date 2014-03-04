@@ -19,8 +19,8 @@ public class Receipt {
         return db.findCustomer(customerId);
     }
 
-    public void addLineItem(String prodId, int qty) {
-        LineItem item = new LineItem(prodId, qty);
+    public void addLineItem(String productId, int qty) {
+        LineItem item = new LineItem(productId, qty);
         addToArray(item);
     }
 
