@@ -2,18 +2,12 @@ package trhpos;
 
 public class CashRegister {
 
-    //has a storage strategy, receipt
-    
-        
-    
-    
-    
-    
-    
+    //receipt..pass in the storage strategy in start new sale, then passed to receipt
+     
     private Receipt receipt;
 
-    public void startNewSale(String customerId) {
-        receipt = new Receipt(customerId);
+    public void startNewSale(String customerId, DataStorageStrategy db, OutputReceiptStrategy output) {
+        receipt = new Receipt(customerId, db, output);
     }
 
     public void addItemToSale(String productId, int qty) {
